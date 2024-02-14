@@ -14,7 +14,7 @@ then the tool must be in "%userprofile%\AppData\Local\Android\Sdk\platform-tools
 
 So launch the [test.4dm](Project/Sources/Methods/test.4dm) method to see the bug : web server cannot be restarted until adb.exe process is killed
 
-even if we restart 4D, the daemon adb.exe remain and keep some ref to the handle, and the port is binded on a no more existing 4D process(not adb), we could see it with TcpView.exe
+even if we restart 4D, the daemon adb.exe remain and keep some ref to the handle, and the port is binded on a no more existing 4D process(not adb), we could see it with [TcpView.exe](https://learn.microsoft.com/fr-fr/sysinternals/downloads/tcpview)
 
 ## workaround
 
